@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="main-page.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="main-page.css" />
 
 </head>
 
@@ -21,29 +21,25 @@
         <img class="header-block__logo" src="img/icons/logo.svg" />
 
         <form class="header-block__food-order-row" action="/order" method="post">
-          <input class="header-block__when-input" name="when" type="text" placeholder="when">
+          <input size="4" class="header-block__when-input" name="when" type="text" placeholder="when">
           <div class="header-block__address-input-label">
-            <span>
-              To
-            </span>
+            To
           </div>
           <label class="header-block__address-container">
             <img class="header-block__location-img" src="img/icons/location-1.svg">
-            <input class="header-block__address-input" name="address" type="text" placeholder="address">
+            <input size="7" class="header-block__address-input" name="address" type="text" placeholder="address">
           </label>
         </form>
         <div class="auth-buttons">
-          <div class="signin-button">
-            <span>
-              Sign In
-            </span>
-          </div>
-          <div class="register-button">
-            <span>
-              Register
-            </span>
-          </div>
-          <img class="basket-icon" src="img/icons/basket.png">
+          <button class="signin-button">
+            Sign In
+          </button>
+          <button class="register-button">
+            Register
+          </button>
+          <button class="cart-button">
+            <img class="cart-icon" src="img/icons/basket.png">
+          </button>
         </div>
       </div>
     </div>

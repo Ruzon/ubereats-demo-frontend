@@ -1,5 +1,3 @@
-/* to fix: системность оступов */
-
 /* common styles */
 
 html {
@@ -14,9 +12,10 @@ html {
 }
 
 body {
-  background-color: #f2f2f2;
+  position: relative;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
+  background-color: #f2f2f2;
 }
 
 input[type="text"],
@@ -32,15 +31,6 @@ select {
   border-color: transparent;
   background-color: #3b3b3b;
   color: inherit;
-}
-
-.container {
-  /* переписал отступы 8px 
-  flexboxgrid2 контейнера 
-  - нормальное решение? */
-  position: relative;
-  padding-right: 0px;
-  padding-left: 0px;
 }
 
 .image {
@@ -73,13 +63,6 @@ select {
 .font-four {
   font-size: 1.62rem;
   line-height: 2.62rem;
-}
-
-/* refactor? */
-
-.common-padding {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .separator-line_white {
@@ -140,8 +123,6 @@ select {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .auth-buttons {
@@ -161,11 +142,26 @@ select {
 
 .signin-button {
   margin: 0 1.5rem;
+  background-color: white;
 }
 
 .register-button {
   background-color: #262626;
   color: white;
+}
+
+.cart-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  border-color: transparent;
+  background-color: transparent;
+  color: inherit;
+}
+
+.cart-icon {
+  display: none;
 }
 
 .header-block__logo {
@@ -174,10 +170,6 @@ select {
 }
 
 .header-block__food-order-row {
-  display: none;
-}
-
-.basket-icon {
   display: none;
 }
 
@@ -195,25 +187,19 @@ select {
 
 @media (min-width: 768px) {
   .header-block {
-    /* justify-content: normal; */
     padding-top: 0;
   }
   .header-block__logo {
-    /* refactor ? */
-    flex: 0.1 1 auto;
     max-width: 15rem;
   }
   .header-block__food-order-row {
+    flex-basis: 50%;
     display: flex;
     justify-content: flex-start;
-    /* refactor ? */
-    flex: 15 1 auto;
-    max-width: 370px;
     padding: 0 3rem;
   }
   .auth-buttons {
-    /* refactor ? */
-    flex: 1 1 auto;
+    flex-basis: 30%;
   }
   .signin-button,
   .register-button {
@@ -228,9 +214,11 @@ select {
   }
   .header-block__when-input {
     flex-basis: 15%;
+    size: 5;
   }
   .header-block__address-container {
-    width: 36rem;
+    /* width: 36rem; */
+    flex-basis: 70%;
     display: flex;
   }
   .header-block__address-input {
@@ -247,9 +235,8 @@ select {
     align-items: center;
     padding: 0 1rem;
   }
-  .basket-icon {
+  .cart-icon {
     display: initial;
-    /* flex: 1 1 0; */
   }
 }
 
