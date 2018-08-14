@@ -2,41 +2,33 @@
 
 .search-block {
   display: flex;
-  padding: 20px 8px 0px;
-  height: 79px;
+  padding-top: 2.5rem;
+  height: 10rem;
 }
 
 .search-input {
   /* refactor ? */
   width: 100%;
-  padding-left: 8px;
+  padding-left: 1rem;
   border-color: transparent;
 }
 
-.main-block__food-order-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  height: 125px;
-  /* align-content: space-between; */
+.main-block__food-order {
+  margin-top: 3rem;
 }
 
 .main-block__when-input,
 .main-block__address-input {
   width: 100%;
-  margin-top: 8px;
-  height: 40px;
+  margin-top: 1rem;
+  height: 7rem;
   border: 1px solid #E0E0E0;
   border-radius: 4px;
   text-align: center;
 }
 
-.main-block__header-box {
-  height: 60px;
-}
-
 .main-block__header-name {
-  padding-top: 15px;
+  margin: 5rem 0 2rem;
 }
 
 .main-block__product-row {
@@ -45,20 +37,17 @@
 }
 
 .main-block__product-description {
-  padding-top: 9px;
-  padding-bottom: 30px;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 /* main-block @media */
 
 @media (min-width: 768px) {
-  .main-block__food-order-row {
+  .main-block__food-order {
     display: none;
   }
-  .main-block__header-box {
-    height: 106px;
-  }
   .main-block__header-name {
-    padding-top: 51px;
+    margin: 7rem 0 2rem;
   }
 }
