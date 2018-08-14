@@ -31,11 +31,6 @@
   margin: 5rem 0 2rem;
 }
 
-.main-block__product-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .main-block__product-description {
   margin-top: 1rem;
   margin-bottom: 4rem;
