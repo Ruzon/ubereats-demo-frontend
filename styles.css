@@ -4,6 +4,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 8px;
 }
 
 *,
@@ -13,8 +14,9 @@ html {
 }
 
 body {
-  background-color: #F2F2F2;
-  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
 }
 
 input[type="text"],
@@ -26,9 +28,9 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: '';
+  text-overflow: "";
   border-color: transparent;
-  background-color: #3B3B3B;
+  background-color: #3b3b3b;
   color: inherit;
 }
 
@@ -43,46 +45,45 @@ select {
 
 .image {
   width: 100%;
-  height: 250px;
+  height: 256px;
+  /* max-width: 600px; */
 }
 
 .separator-line {
   height: 1px;
   mix-blend-mode: normal;
   opacity: 0.4;
-  margin-left: 8px;
-  margin-right: 8px;
 }
 
 .font-one {
-  font-size: 22px;
-  line-height: 34px;
+  font-size: 2.75rem;
+  line-height: 4.25rem;
 }
 
 .font-two {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
 .font-three {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 1.75rem;
+  line-height: 2.62rem;
 }
 
 .font-four {
-  font-size: 13px;
-  line-height: 21px;
+  font-size: 1.62rem;
+  line-height: 2.62rem;
 }
 
 /* refactor? */
 
 .common-padding {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .separator-line_white {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .separator-line_gray {
@@ -92,15 +93,15 @@ select {
 .home-button {
   /* как реализовать fixed в рамках родителя?  */
   position: absolute;
-  bottom: 24px;
-  right: 16px;
-  width: 64px;
-  height: 64px;
+  bottom: 3rem;
+  right: 2rem;
+  width: 8rem;
+  height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  background: #59BD5A;
+  background: #59bd5a;
 }
 
 .home-button__arrow {
@@ -114,29 +115,33 @@ select {
     height: 256px;
   }
   .home-button {
-    width: 80px;
-    height: 80px;
+    width: 10rem;
+    height: 10rem;
   }
 }
 
 @media (min-width: 1124px) {
   body {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 }
 
 /* header-block */
 
 .header-block {
-  height: 72px;
-  background-color: #FFFFFF;
+  height: 9rem;
+  padding-top: 2rem;
+  background-color: #ffffff;
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.header-block__row {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .auth-buttons {
@@ -148,14 +153,14 @@ select {
 
 .signin-button,
 .register-button {
-  flex-basis: 72px;
+  flex-basis: 9rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .signin-button {
-  margin-right: 12px;
+  margin: 0 1.5rem;
 }
 
 .register-button {
@@ -180,8 +185,8 @@ select {
 .header-block__address-container,
 .signin-button,
 .register-button {
-  height: 40px;
-  border: 1px solid #E0E0E0;
+  height: 5rem;
+  border: 1px solid #e0e0e0;
   border-radius: 4px;
   text-align: center;
 }
@@ -190,12 +195,13 @@ select {
 
 @media (min-width: 768px) {
   .header-block {
-    justify-content: normal;
+    /* justify-content: normal; */
+    padding-top: 0;
   }
   .header-block__logo {
     /* refactor ? */
     flex: 0.1 1 auto;
-    max-width: 120px;
+    max-width: 15rem;
   }
   .header-block__food-order-row {
     display: flex;
@@ -203,7 +209,7 @@ select {
     /* refactor ? */
     flex: 15 1 auto;
     max-width: 370px;
-    padding-left: 22px;
+    padding: 0 3rem;
   }
   .auth-buttons {
     /* refactor ? */
@@ -211,9 +217,9 @@ select {
   }
   .signin-button,
   .register-button {
-    flex-basis: 80px;
-    width: 80px;
-    margin-right: 16px;
+    flex-basis: 10rem;
+    width: 10rem;
+    margin-right: 2rem;
   }
   .header-block__when-input,
   .header-block__address-input {
@@ -224,7 +230,7 @@ select {
     flex-basis: 15%;
   }
   .header-block__address-container {
-    width: 292px;
+    width: 36rem;
     display: flex;
   }
   .header-block__address-input {
@@ -232,14 +238,14 @@ select {
     width: 100%;
   }
   .header-block__location-img {
-    margin: 0px 12px;
+    margin: 0 1.5rem;
   }
   .header-block__address-input-label {
     flex-basis: 7%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 10px;
+    padding: 0 1rem;
   }
   .basket-icon {
     display: initial;
@@ -254,7 +260,7 @@ select {
     padding-left: initial;
   }
   .header-block__when-input {
-    max-width: 65px;
+    max-width: 8rem;
   }
   .auth-buttons {
     flex-basis: 25%;
@@ -264,14 +270,14 @@ select {
 /* global-footer */
 
 .global-footer {
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 1.7rem;
+  line-height: 2rem;
   background: #262626;
   color: white;
 }
 
 .global-footer__link-box {
-  padding: 10px 0px;
+  padding: 1.5rem 0;
 }
 
 .global-footer a {
@@ -280,47 +286,43 @@ select {
 }
 
 .global-footer__menu {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 32px 0px;
+  padding: 4rem 0;
 }
 
 .global-footer__apps {
   display: flex;
-  justify-content: ;
-  padding: 24px 0px;
+  justify-content: center;
+  padding: 3rem 0;
 }
 
 .global-footer__apps>* {
-  padding: 0px 10px;
+  padding: 0 1.5rem;
 }
 
 .global-footer__documents {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 11px;
-  line-height: 13px;
-  padding: 32px 0px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 2.5rem 0px;
 }
 
 .global-footer__select-box {
-  width: 173px;
-  height: 40px;
-  margin-bottom: 25px;
+  width: 21.5rem;
+  height: 5rem;
+  margin-bottom: 3rem;
   color: white;
-  background-color: #3B3B3B;
+  background-color: #3b3b3b;
 }
 
 .global-footer__world-icon {
   display: inline-block;
   padding-left: 16px;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 .global-footer__select {
   display: inline-block;
-  padding-left: 16px;
-  /* padding-bottom: 20px; ? не отрабатывает */
+  padding-left: 2rem;
+  /* padding-bottom: 20px; ? не отрабатывает*/
 }
 
 .global-footer__select-arrow-icon {
@@ -328,11 +330,9 @@ select {
   padding-bottom: 3px;
 }
 
-.global-footer__logo-row {
-  height: 116px;
-  display: flex;
-  align-items: center;
-  padding-top: 15px;
+.global-footer__logo-box {
+  height: 15rem;
+  padding-top: 5rem;
 }
 
 .footer-logo {
@@ -343,29 +343,26 @@ select {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
-  width: 96px;
-  height: 59px;
+  width: 12rem;
+  height: 8rem;
 }
 
 .ubereats-hashtag {
   flex-basis: 100%;
-  color: #49A144;
-  font-size: 16px;
-  line-height: 19px;
+  color: #49a144;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 /* footer @media */
 
 @media (min-width: 768px) {
-  .global-footer {
-    height: 552px;
-  }
   .footer-logo {
     width: 75%;
   }
   .social-media {
-    width: 92px;
-    height: 60px;
+    width: 11.5rem;
+    height: 8rem;
   }
   .global-footer__apps {
     justify-content: center;
