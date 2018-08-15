@@ -74,12 +74,12 @@ select {
 
 .home-button {
   /* как реализовать fixed в рамках родителя?  */
+  display: flex;
   position: absolute;
   bottom: 3rem;
   right: 2rem;
   width: 8rem;
   height: 8rem;
-  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2px;
@@ -133,9 +133,9 @@ select {
 
 .signin-button,
 .register-button {
+  display: flex;
   flex-basis: 9rem;
   min-width: 7rem;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -217,9 +217,8 @@ select {
     size: 5;
   }
   .header-block__address-container {
-    /* width: 36rem; */
-    flex-basis: 70%;
     display: flex;
+    flex-basis: 70%;
   }
   .header-block__address-input {
     border-color: transparent;
@@ -229,8 +228,8 @@ select {
     margin: 0 1.5rem;
   }
   .header-block__address-input-label {
-    flex-basis: 7%;
     display: flex;
+    flex-basis: 7%;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
@@ -259,8 +258,8 @@ select {
 .global-footer {
   font-size: 1.7rem;
   line-height: 2rem;
-  background: #262626;
   color: white;
+  background: #262626;
 }
 
 .global-footer__link-box {
@@ -307,23 +306,6 @@ select {
   background-color: #3b3b3b;
 }
 
-.global-footer__world-icon {
-  display: inline-block;
-  padding-left: 16px;
-  margin-top: 10px;
-}
-
-.global-footer__select {
-  display: inline-block;
-  padding-left: 2rem;
-  /* padding-bottom: 20px; ? не отрабатывает*/
-}
-
-.global-footer__select-arrow-icon {
-  padding-left: 40px;
-  padding-bottom: 3px;
-}
-
 .global-footer__logo-box {
   height: 15rem;
   padding-top: 5rem;
@@ -335,10 +317,10 @@ select {
 
 .social-media {
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
   width: 12rem;
   height: 8rem;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .ubereats-hashtag {
