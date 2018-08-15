@@ -47,20 +47,19 @@
 
   <main class="stores">
     <div class="container">
-
-      <div class="search-block">
+      <form class="search-block" action="/search-stores" method="post">
         <img src="img/icons/search.svg">
         <input class="search-input" type="text" placeholder="Search for restaurant or cuisine">
-      </div>
+      </form>
 
       <hr class="separator-line separator-line_gray">
 
-      <div class="stores__food-order">
+      <form class="stores__food-order" action="/order" method="post">
         <div class="stores__when-input-label">When</div>
         <div class="stores__address-input-label">To</div>
         <input class="stores__when-input" type="text" size="2" placeholder="when">
         <input class="stores__address-input" name="address" type="text" size="2" placeholder="address">
-      </div>
+      </form>
 
       <div class="stores__header-name font-one">Moscow restaurants</div>
       <div class="row">
@@ -142,7 +141,7 @@
           <div class="col-xs-12 col-md-4">
             <form>
               <!-- refactor select: icon inside select text-->
-              <div class="global-footer__select-box">
+              <form class="global-footer__select-box" action="/localization" method="post">
                 <label>
                   <img class="global-footer__world-icon" src=" img/icons/world.svg ">
                   <select class="global-footer__select" name="localization">
@@ -153,7 +152,7 @@
                   </select>
                   <img class="global-footer__select-arrow-icon" src=" img/icons/if_icon-ios7-arrow-back_211686.svg ">
                 </label>
-              </div>
+              </form>
             </form>
 
             <div>
