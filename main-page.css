@@ -1,4 +1,4 @@
-/* main-block */
+/* stores */
 
 .search-block {
   display: flex;
@@ -13,36 +13,65 @@
   border-color: transparent;
 }
 
-.main-block__food-order {
+.stores__food-order {
+  display: flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 3rem;
 }
 
-.main-block__when-input,
-.main-block__address-input {
-  width: 100%;
+.stores__when-input-label,
+.stores__address-input-label {
+  color: #626262;
+  font-size: 1.8rem;
+}
+
+.stores__when-input-label,
+.stores__when-input {
+  flex-basis: 25%;
+}
+
+.stores__address-input-label,
+.stores__address-input {
+  flex-basis: 67%;
+}
+
+.stores__when-input,
+.stores__address-input {
   margin-top: 1rem;
   height: 7rem;
   border: 1px solid #E0E0E0;
   border-radius: 4px;
   text-align: center;
+  /* align-items: center; */
+  outline: none;
+  color: #1D1D1D;
+  font-size: 2.1rem;
+  line-height: 8rem;
 }
 
-.main-block__header-name {
+.stores__address-input {
+  background: url("img/icons/location-1.svg") no-repeat 1.5rem;
+  background-size: 2.5rem;
+}
+
+.stores__header-name {
   margin: 5rem 0 2rem;
 }
 
-.main-block__product-description {
+.stores__product-description {
   margin-top: 1rem;
   margin-bottom: 4rem;
 }
 
-/* main-block @media */
+/* stores @media */
 
 @media (min-width: 768px) {
-  .main-block__food-order {
+  .stores__food-order {
     display: none;
   }
-  .main-block__header-name {
+  .stores__header-name {
     margin: 7rem 0 2rem;
   }
 }
