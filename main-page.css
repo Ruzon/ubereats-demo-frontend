@@ -1,0 +1,72 @@
+/* stores */
+
+.search-block {
+  display: flex;
+  margin: 6.5rem 0 4rem;
+}
+
+.search-input {
+  width: 100%;
+  padding-left: 1rem;
+  border-color: transparent;
+}
+
+.stores__food-order {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.stores__when-input-label,
+.stores__address-input-label {
+  color: #626262;
+  font-size: 1.8rem;
+}
+
+.stores__when-input-label,
+.stores__when-input {
+  flex-basis: 25%;
+}
+
+.stores__address-input-label,
+.stores__address-input {
+  flex-basis: 67%;
+}
+
+.stores__when-input,
+.stores__address-input {
+  margin-top: 1rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  text-align: center;
+  color: #1D1D1D;
+  font-size: 2.1rem;
+  line-height: 7rem;
+  outline: none;
+}
+
+.stores__address-input {
+  background: url("img/icons/location-1.svg") no-repeat 1.5rem;
+  background-size: 2.5rem;
+}
+
+.stores__header-name {
+  margin: 5rem 0 2rem;
+}
+
+.stores__product-description {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+/* stores @media */
+
+@media (min-width: 768px) {
+  .stores__food-order {
+    display: none;
+  }
+  .stores__header-name {
+    margin: 7rem 0 2rem;
+  }
+}

@@ -1,0 +1,360 @@
+/* common styles */
+
+html {
+  box-sizing: border-box;
+  font-size: 8px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  background-color: #f2f2f2;
+}
+
+input[type="text"],
+textarea {
+  background-color: transparent;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  border-color: transparent;
+  background-color: #3b3b3b;
+  color: inherit;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.separator-line {
+  margin: 0;
+  border: solid 0.5px;
+  opacity: 0.3;
+}
+
+.font-one {
+  font-size: 2.75rem;
+  line-height: 4.25rem;
+}
+
+.font-two {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.font-three {
+  font-size: 1.75rem;
+  line-height: 2.62rem;
+}
+
+.font-four {
+  font-size: 1.62rem;
+  line-height: 2.62rem;
+}
+
+.separator-line_white {
+  background: #ffffff;
+}
+
+.separator-line_gray {
+  background: #757575;
+}
+
+.home-button {
+  /* как реализовать fixed в рамках родителя?  */
+  display: flex;
+  position: absolute;
+  bottom: 3rem;
+  right: 2rem;
+  width: 8rem;
+  height: 8rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  background: #59bd5a;
+}
+
+.home-button__arrow {
+  height: 40%;
+}
+
+/* common styles  @media */
+
+@media (min-width: 768px) {
+  .image {
+    height: 256px;
+  }
+  .home-button {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 1124px) {
+  body {
+    background-color: #ffffff;
+  }
+}
+
+/* header-block */
+
+.header-block {
+  padding: 2rem 0;
+  font-size: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.header-block * {
+  line-height: 4rem;
+}
+
+.header-block__row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.signin-button,
+.register-button {
+  display: flex;
+  flex-basis: 9rem;
+  min-width: 7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-button {
+  margin: 0 1.5rem;
+  background-color: white;
+}
+
+.register-button {
+  background-color: #262626;
+  color: white;
+}
+
+.cart-button {
+  display: flex;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  border-color: transparent;
+  background-color: transparent;
+  color: inherit;
+}
+
+.cart-icon {
+  object-fit: cover;
+  display: none;
+}
+
+.header-block__logo {
+  flex-basis: 40%;
+  width: 100%;
+}
+
+.header-block__food-order-row {
+  display: none;
+}
+
+.header-block__when-input,
+.header-block__address-container,
+.signin-button,
+.register-button {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* header-block @media */
+
+@media (min-width: 768px) {
+  .header-block__logo {
+    max-width: 15rem;
+  }
+  .header-block__food-order-row {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 3rem;
+  }
+  .auth-buttons {
+    flex-basis: 30%;
+  }
+  .signin-button,
+  .register-button {
+    flex-basis: 10rem;
+    width: 10rem;
+    margin-right: 2rem;
+  }
+  .header-block__when-input,
+  .header-block__address-input {
+    display: initial;
+    min-width: 10%;
+  }
+  .header-block__when-input {
+    flex-basis: 15%;
+  }
+  .header-block__address-container {
+    display: flex;
+    flex-basis: 70%;
+  }
+  .header-block__address-input {
+    border-color: transparent;
+    width: 100%;
+    border: 1px;
+  }
+  .header-block__location-img {
+    margin: 0 1.5rem;
+  }
+  .header-block__address-input-label {
+    display: flex;
+    flex-basis: 7%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .cart-icon {
+    display: initial;
+  }
+}
+
+@media (min-width: 1124px) {
+  .header-block__food-order-row {
+    max-width: initial;
+    justify-content: center;
+    padding-left: initial;
+  }
+  .header-block__when-input {
+    max-width: 8rem;
+  }
+  .auth-buttons {
+    flex-basis: 25%;
+  }
+}
+
+/* global-footer */
+
+.global-footer {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  color: white;
+  background: #262626;
+}
+
+.global-footer__link-box {
+  padding: 1.5rem 0;
+}
+
+.global-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.global-footer__menu {
+  padding: 4rem 0;
+}
+
+.global-footer__apps {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.global-footer__apps>* {
+  padding: 0 1.5rem;
+}
+
+.global-footer__documents {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 2.5rem 0px;
+}
+
+.global-footer__select-loc {
+  width: 55%;
+  padding: 1.6rem 0;
+  margin-bottom: 3rem;
+  border: none;
+  border-radius: 4px;
+  line-height: 13px;
+  padding-left: 48px;
+  font-size: 13px;
+  background: url(img/icons/world.svg) no-repeat 5% 13px, url(img/icons/if_icon-ios7-arrow-back_211686.svg) no-repeat 95% 17px;
+  color: white;
+  -webkit-appearance: none;
+  background-color: #3b3b3b;
+}
+
+.global-footer__logo-box {
+  padding: 7rem 0 5rem;
+}
+
+.footer-logo {
+  width: 95%;
+}
+
+.social-media {
+  display: flex;
+  width: 12rem;
+  margin: 2.5rem 0;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.ubereats-hashtag {
+  flex-basis: 100%;
+  color: #49a144;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+/* footer @media */
+
+@media (min-width: 768px) {
+  .footer-logo {
+    width: 75%;
+  }
+  .global-footer__select-loc {
+    width: 70%;
+  }
+  .social-media {
+    width: 11.5rem;
+  }
+  .global-footer__apps {
+    justify-content: center;
+    padding: 40px 0px;
+  }
+  .global-footer__apps>* {
+    padding: 0px 20px;
+  }
+}
+
+@media (min-width: 1124px) {
+  .footer-logo {
+    width: 83%;
+  }
+}
