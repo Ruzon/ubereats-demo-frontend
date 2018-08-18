@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Uber Eats</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="store.css" />
+
+</head>
+
+<body>
+  <header class="header-block">
+    <div class="container">
+      <div class="header-block__row">
+        <img class="header-block__logo" src="img/icons/logo.svg" />
+
+        <form class="header-block__food-order-row" action="/order" method="post">
+          <input size="4" class="header-block__when-input" name="when" type="text" placeholder="when">
+          <div class="header-block__address-input-label">
+            To
+          </div>
+          <label class="header-block__address-container">
+            <img class="header-block__location-img" src="img/icons/location-1.svg">
+            <input size="7" class="header-block__address-input" name="address" type="text" placeholder="address">
+          </label>
+        </form>
+        <div class="auth-buttons">
+          <button class="signin-button">
+            Sign In
+          </button>
+          <button class="register-button">
+            Register
+          </button>
+          <button class="cart-button">
+            <img class="cart-icon" src="img/icons/basket.svg">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="store">
+    <section class="store-presentation">
+      <div class="container">
+        <div class="store-presentation__base-info">
+          <div class="store-presentation__base-info-inner">
+            <h1 class="store-presentation__name">
+              Трактир «Пушкин»
+            </h1>
+            <div class="store-presentation__price-level font-two">₽₽₽ • Европейская</div>
+            <div class="store-presentation__delivery-time-box">
+              <div class="store-presentation__delivery-time">40-50 Min</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="store-menu ">
+      <div class="container">
+        <div class="store-info__food-type-box">
+          <div class="store-info__food-type-name font-one ">Закуски</div>
+          <hr class="sotre-info__header-name-line ">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="global-footer ">
+    <div class="container ">
+      <div class="global-footer__logo-box ">
+        <div class="row ">
+          <div class="col-xs-8 col-md-4 col-lg-3 ">
+            <img class="footer-logo " src="img/icons/white-logo.svg ">
+          </div>
+        </div>
+      </div>
+      <hr class="separator-line separator-line_white ">
+      <div class="global-footer__menu ">
+        <div class="row ">
+          <div class="col-xs-12 col-md-4 ">
+            <form class="global-footer__select-box " action="/localization " method="post ">
+              <select class="global-footer__select-loc " name="localization ">
+                <option value="RU ">RUSSIAN</option>
+                <option value="DU ">DUTCH</option>
+                <option value="EN " selected>ENGLISH</option>
+                <option value="GE " disabled>GERMAN</option>
+              </select>
+            </form>
+
+            <div>
+              <span class="ubereats-hashtag ">#</span>UberEats </div>
+            <div class="social-media ">
+              <img class="facebook-icon " src="img/icons/facebook.svg ">
+              <img class="twitter-icon " src="img/icons/twitter.svg ">
+              <img class="instagram-icon " src="img/icons/instagram-2.svg ">
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 ">
+            <div class="global-footer__link-box ">
+              <a href="/new " target="_blank ">About UberEats</a>
+            </div>
+            <div class="global-footer__link-box ">
+              <a href="/new " target="_blank ">Become a delivery partner</a>
+            </div>
+            <div class="global-footer__link-box ">
+              <a href="/new " target="_blank ">See all cities</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 ">
+            <div class="global-footer__link-box ">
+              <a href="/new " target="_blank ">Pricing</a>
+            </div>
+            <div class="global-footer__link-box ">
+              <a href="/new " target="_blank ">Help</a>
+            </div>
+            <div class="global-footer__link-box ">
+              <a href="/new " target="_blank ">FAQs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="separator-line separator-line_white ">
+      <div class="global-footer__apps ">
+        <img class="appstore-icon " src="img/icons/appstore.png " alt="appstore icon ">
+        <img class="google-play-icon " src="img/icons/gooogle_play.png " alt="google play icon ">
+      </div>
+      <hr class="separator-line separator-line_white ">
+      <div class="global-footer__documents ">
+        <div class="row ">
+          <div class="col-xs-12 col-md-4 ">
+            <div class="global-footer__link-box ">
+              2017 Uber Technologies Inc.
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 ">
+            <div class="global-footer__link-box ">
+              <a href="/new " target="_blank ">Privacy</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 ">
+            <div class="global-footer__link-box ">
+              <a href="/new " target="_blank ">Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="home-button ">
+    <img class="home-button__arrow " src="img/icons/arrow.svg ">
+  </div>
+</body>
+
+</html>

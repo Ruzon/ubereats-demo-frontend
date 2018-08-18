@@ -1,0 +1,101 @@
+.store-presentation {
+  background: url("img/products/ph-back-xs.png") no-repeat;
+  background-size: cover;
+  height: 32rem;
+  padding-top: 17rem;
+  margin-bottom: 13rem;
+}
+
+.store-presentation__base-info {
+  padding: 3rem 6rem;
+  margin: 0 1%;
+  background: white;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+}
+
+.store-presentation__base-info-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.store-presentation__name,
+.store-presentation__price-level,
+.store-presentation__delivery-time-box {
+  flex-basis: 100%;
+}
+
+.store-presentation__name {
+  margin: 0 0 5rem 0;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: 400;
+}
+
+.store-presentation__price-level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.store-presentation__delivery-time-box {
+  display: flex;
+  justify-content: center;
+}
+
+.store-presentation__delivery-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 11rem;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 2rem;
+  background: #262626;
+}
+
+@media (min-width: 768px) {
+  .store-presentation {
+    padding-top: 10rem;
+    background: url("img/products/ph-back-md.png") no-repeat;
+    height: 70rem;
+    margin-bottom: 0rem;
+  }
+  .store-presentation__base-info {
+    margin-left: 8px;
+    width: 54rem;
+  }
+  .store-presentation__base-info-inner {
+    justify-content: space-between;
+  }
+  .store-presentation__name {
+    text-align: left;
+    margin: 0 0 7rem;
+  }
+  .store-presentation__price-level {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+  .store-presentation__price-level,
+  .store-presentation__delivery-time-box {
+    flex-basis: 50%;
+  }
+  .store-presentation__delivery-time-box {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 768px) {
+  .store-info {
+    background: url("img/products/photo-back-lg.png") no-repeat;
+    background-size: cover;
+  }
+  .store-presentation__base-info {
+    width: 55%;
+  }
+}
