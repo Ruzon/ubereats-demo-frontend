@@ -1,5 +1,11 @@
+.store {
+  margin-bottom: 8rem;
+}
+
 .store-presentation {
-  background: url("img/products/ph-back-xs.png") no-repeat;
+  display: flex;
+  background-image: url("img/products/ph-back-xs.png");
+  background-repeat: no-repeat;
   background-size: cover;
   height: 32rem;
   padding-top: 17rem;
@@ -60,21 +66,24 @@
 
 @media (min-width: 768px) {
   .store-presentation {
-    padding-top: 10rem;
-    background: url("img/products/ph-back-md.png") no-repeat;
+    align-items: center;
+    height: 48rem;
+    padding-top: 0;
+    background-image: url("img/products/ph-back-md.png");
     height: 70rem;
     margin-bottom: 0rem;
   }
   .store-presentation__base-info {
-    margin-left: 8px;
     width: 54rem;
+    padding: 4.5rem;
+    max-width: 60rem;
   }
   .store-presentation__base-info-inner {
     justify-content: space-between;
   }
   .store-presentation__name {
     text-align: left;
-    margin: 0 0 7rem;
+    margin: 0 0 12rem;
   }
   .store-presentation__price-level {
     justify-content: flex-start;
@@ -91,11 +100,123 @@
 }
 
 @media (min-width: 768px) {
-  .store-info {
-    background: url("img/products/photo-back-lg.png") no-repeat;
-    background-size: cover;
+  .store-presentation {
+    background-image: url("img/products/photo-back-lg.png");
   }
   .store-presentation__base-info {
     width: 55%;
   }
+}
+
+/* Navigation */
+
+.navigation {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+    height: 80px;
+  }
+  .navigation__link {
+    color: #626262;
+    font-size: 16px;
+    margin-right: 40px;
+    text-decoration: none;
+  }
+  .navigation__link_selected {
+    color: #327430;
+  }
+}
+
+/* Menu title */
+
+.menu__section-name {
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #1d1d1d;
+  text-align: center;
+  margin-top: 12rem;
+}
+
+.menu__section-name-separator {
+  width: 50px;
+  border: solid 0.5px #757575;
+}
+
+@media (min-width: 768px) {
+  .menu__section-name {
+    text-align: left;
+    margin-top: 7rem;
+  }
+  .menu__section-name-separator {
+    display: none;
+  }
+}
+
+/* Menu products */
+
+.restaurant_product_card {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+  border: 1px solid rgba(117, 117, 117, 0.1);
+  background: #ffffff;
+}
+
+.product__description-box {
+  padding: 2rem;
+}
+
+.product__description-box-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product__name {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #1d1d1d;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) {
+  .restaurant_product_card {
+    margin-top: 4rem;
+    background: #ffffff;
+  }
+  .product__name {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .product__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.product__details {
+  font-size: 13px;
+  line-height: 21px;
+  color: #626262;
+  margin: 4px 0px 0px 0px;
+}
+
+.product__price {
+  font-size: 15px;
+  line-height: 21px;
+  color: #1d1d1d;
+}
+
+.product__photo {
+  height: 100%;
+  object-fit: cover;
 }
